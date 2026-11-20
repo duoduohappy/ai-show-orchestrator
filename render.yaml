@@ -1,38 +1,35 @@
 services:
-  - type: web
-    name: culture-show-automation
-    runtime: node
-    plan: starter
-    buildCommand: npm ci --omit=dev --ignore-scripts
-    startCommand: npm start
-    healthCheckPath: /api/health
-    disk:
-      name: show-data
-      mountPath: /var/data
-      sizeGB: 1
-    envVars:
-      - key: NODE_VERSION
-        value: 24.21.0
-      - key: HOST
-        value: 0.0.0.0
-      - key: DATA_DIR
-        value: /var/data
-      - key: OBS_TRANSPORT
-        value: gateway
-      - key: OBS_MODE
-        value: real
-      - key: SHOW_OPERATOR_PASSWORD
-        generateValue: true
-      - key: GATEWAY_TOKEN
-        generateValue: true
-      - key: SHOW_TEST_FAULTS
-        value: "false"
-      - key: AI_PROVIDER
-        value: compatible
-      - key: AI_BASE_URL
-        sync: false
-      - key: AI_MODEL
-        sync: false
-      - key: AI_API_KEY
-        sync: false
-
+- type: web
+  name: ai-show-orchestrator
+  runtime: node
+  plan: free
+  buildCommand: npm ci --omit=dev --ignore-scripts
+  startCommand: npm start
+  healthCheckPath: /api/health
+  envVars:
+  - key: NODE_VERSION
+    value: 24.21.0
+  - key: HOST
+    value: 0.0.0.0
+  - key: DATA_DIR
+    value: /tmp/ai-show-orchestrator
+  - key: OBS_TRANSPORT
+    value: gateway
+  - key: OBS_MODE
+    value: real
+  - key: SHOW_OPERATOR_PASSWORD
+    generateValue: true
+  - key: GATEWAY_TOKEN
+    generateValue: true
+  - key: SHOW_TEST_FAULTS
+    value: 'false'
+  - key: AI_PROVIDER
+    value: compatible
+  - key: AI_BASE_URL
+    value: ''
+  - key: AI_MODEL
+    value: ''
+  - key: AI_API_KEY
+    value: ''
+  - key: DEMO_MODE
+    value: ephemeral
