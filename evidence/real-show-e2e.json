@@ -1,0 +1,951 @@
+{
+  "verifiedAt": "2026-11-20T10:02:02.935Z",
+  "kind": "真实 OBS 33.0.1 + WebSocket + 本机 HTTP 端到端测试",
+  "media": "FFmpeg 程序渲染，非 AI 视频",
+  "obsVersion": "33.0.1",
+  "elapsedMs": 15148,
+  "softwareReadbackLatencyMs": [
+    75,
+    75,
+    77
+  ],
+  "maxReadbackMs": 77,
+  "previewSaved": true,
+  "recording": {
+    "verified": true,
+    "method": "OBS GetSourceScreenshot 采样后用 FFmpeg 合成，无音频",
+    "outputPath": "D:\\CodexBackup\\2026-11-20\\ai\\outputs\\ai-business-prototypes\\show-automation\\evidence\\real-obs-demo.mp4",
+    "frames": 55
+  },
+  "requestCount": 130,
+  "state": {
+    "version": 1,
+    "status": "已完成",
+    "cues": [
+      {
+        "id": "CUE-1",
+        "name": "开场",
+        "atMs": 0,
+        "durationMs": 5000,
+        "sceneName": "全景机位",
+        "inputName": "InterviewDemo-opening"
+      },
+      {
+        "id": "CUE-2",
+        "name": "主唱入场",
+        "atMs": 5000,
+        "durationMs": 5000,
+        "sceneName": "主唱中景",
+        "inputName": "InterviewDemo-performance"
+      },
+      {
+        "id": "CUE-3",
+        "name": "谢幕",
+        "atMs": 10000,
+        "durationMs": 5000,
+        "sceneName": "舞台全景",
+        "inputName": "InterviewDemo-finale"
+      }
+    ],
+    "rehearsedVersion": 1,
+    "published": {
+      "version": 1,
+      "cues": [
+        {
+          "id": "CUE-1",
+          "name": "开场",
+          "atMs": 0,
+          "durationMs": 5000,
+          "sceneName": "全景机位",
+          "inputName": "InterviewDemo-opening"
+        },
+        {
+          "id": "CUE-2",
+          "name": "主唱入场",
+          "atMs": 5000,
+          "durationMs": 5000,
+          "sceneName": "主唱中景",
+          "inputName": "InterviewDemo-performance"
+        },
+        {
+          "id": "CUE-3",
+          "name": "谢幕",
+          "atMs": 10000,
+          "durationMs": 5000,
+          "sceneName": "舞台全景",
+          "inputName": "InterviewDemo-finale"
+        }
+      ]
+    },
+    "run": {
+      "id": "b9f2a6ea-ba1d-484b-835d-dd3ee9d7543a",
+      "version": 1,
+      "startedAt": 1795168907295,
+      "auto": true,
+      "failures": 0,
+      "executions": [
+        {
+          "cueId": "CUE-1",
+          "name": "开场",
+          "sceneName": "全景机位",
+          "actualAt": 1795168907457,
+          "plannedAtMs": 0,
+          "latencyMs": 75,
+          "latenessMs": 162,
+          "recovered": false,
+          "mediaState": "OBS_MEDIA_STATE_PLAYING"
+        },
+        {
+          "cueId": "CUE-2",
+          "name": "主唱入场",
+          "sceneName": "主唱中景",
+          "actualAt": 1795168912529,
+          "plannedAtMs": 5000,
+          "latencyMs": 75,
+          "latenessMs": 234,
+          "recovered": false,
+          "mediaState": "OBS_MEDIA_STATE_PLAYING"
+        },
+        {
+          "cueId": "CUE-3",
+          "name": "谢幕",
+          "sceneName": "舞台全景",
+          "actualAt": 1795168917424,
+          "plannedAtMs": 10000,
+          "latencyMs": 77,
+          "latenessMs": 129,
+          "recovered": false,
+          "mediaState": "OBS_MEDIA_STATE_PLAYING"
+        }
+      ],
+      "pausedAt": null,
+      "finishedAt": 1795168922443
+    },
+    "cursor": 3,
+    "pending": null,
+    "events": [
+      {
+        "at": "2026-11-20T10:02:02.443Z",
+        "message": "最后一段媒体已结束，整场执行报告完成"
+      },
+      {
+        "at": "2026-11-20T10:01:57.424Z",
+        "message": "真实 OBS cue 已回读：谢幕",
+        "latencyMs": 77,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:52.529Z",
+        "message": "真实 OBS cue 已回读：主唱入场",
+        "latencyMs": 75,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.457Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 75,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.295Z",
+        "message": "真实软件演出已开始",
+        "auto": true
+      },
+      {
+        "at": "2026-11-20T10:01:47.283Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T10:01:47.276Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T10:01:47.128Z",
+        "message": "已终止自动执行，保留 OBS 当前画面与审计"
+      },
+      {
+        "at": "2026-11-20T10:01:47.122Z",
+        "message": "回读检查完成，时间轴从暂停点恢复"
+      },
+      {
+        "at": "2026-11-20T10:01:47.112Z",
+        "message": "操作失败：测试故障：指令发送前连接失败",
+        "action": "next"
+      },
+      {
+        "at": "2026-11-20T10:01:47.100Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 81,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.012Z",
+        "message": "真实软件演出已开始",
+        "auto": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.003Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T10:01:46.997Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T10:01:46.788Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      },
+      {
+        "at": "2026-11-20T09:59:42.091Z",
+        "message": "最后一段媒体已结束，整场执行报告完成"
+      },
+      {
+        "at": "2026-11-20T09:59:37.059Z",
+        "message": "真实 OBS cue 已回读：谢幕",
+        "latencyMs": 60,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T09:59:32.151Z",
+        "message": "真实 OBS cue 已回读：主唱入场",
+        "latencyMs": 61,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T09:59:27.088Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 76,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T09:59:26.915Z",
+        "message": "真实软件演出已开始",
+        "auto": true
+      },
+      {
+        "at": "2026-11-20T09:59:26.884Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T09:59:26.877Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T09:59:26.714Z",
+        "message": "已终止自动执行，保留 OBS 当前画面与审计"
+      },
+      {
+        "at": "2026-11-20T09:59:26.708Z",
+        "message": "回读检查完成，时间轴从暂停点恢复"
+      },
+      {
+        "at": "2026-11-20T09:59:26.699Z",
+        "message": "操作失败：测试故障：指令发送前连接失败",
+        "action": "next"
+      },
+      {
+        "at": "2026-11-20T09:59:26.684Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 59,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T09:59:26.615Z",
+        "message": "真实软件演出已开始",
+        "auto": false
+      },
+      {
+        "at": "2026-11-20T09:59:26.605Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T09:59:26.599Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T09:59:26.391Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      },
+      {
+        "at": "2026-11-20T09:57:45.866Z",
+        "message": "操作失败：媒体未就绪 开场",
+        "action": "rehearse"
+      },
+      {
+        "at": "2026-11-20T09:57:43.341Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      },
+      {
+        "at": "2026-11-20T09:56:36.717Z",
+        "message": "操作失败：媒体未就绪 开场",
+        "action": "rehearse"
+      },
+      {
+        "at": "2026-11-20T09:56:36.693Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      }
+    ],
+    "busy": false,
+    "transport": "direct",
+    "gatewayLastSeen": null,
+    "faultInjectionAllowed": true,
+    "capabilities": {
+      "obs": "真实 OBS 软件控制",
+      "video": "FFmpeg 程序渲染素材",
+      "lighting": "未接入",
+      "audioMixing": "未接入"
+    }
+  },
+  "calls": [
+    {
+      "route": "actions/prepare",
+      "status": 401,
+      "elapsedMs": 31
+    },
+    {
+      "route": "login",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "actions/prepare",
+      "status": 200,
+      "elapsedMs": 172
+    },
+    {
+      "route": "obs-status",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "actions/rehearse",
+      "status": 200,
+      "elapsedMs": 200
+    },
+    {
+      "route": "actions/publish",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "actions/start",
+      "status": 200,
+      "elapsedMs": 9
+    },
+    {
+      "route": "actions/next",
+      "status": 200,
+      "elapsedMs": 88
+    },
+    {
+      "route": "actions/next",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "actions/fault",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "actions/next",
+      "status": 409,
+      "elapsedMs": 6
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "actions/recover",
+      "status": 200,
+      "elapsedMs": 8
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "actions/stop",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "actions/rehearse",
+      "status": 200,
+      "elapsedMs": 146
+    },
+    {
+      "route": "actions/publish",
+      "status": 200,
+      "elapsedMs": 7
+    },
+    {
+      "route": "actions/start",
+      "status": 200,
+      "elapsedMs": 10
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 15
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 38
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 21
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 26
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 32
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 30
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 26
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 36
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 22
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 25
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 8
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 43
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 25
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 16
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 37
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 29
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 16
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 23
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 29
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 39
+    }
+  ]
+}

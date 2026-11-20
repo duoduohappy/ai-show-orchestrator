@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "files": {
+    "opening.mp4": {
+      "sha256": "7b984547ffc668607132b0289f4c2f04a8f8dce9993a59d6c279386b939d7bae"
+    },
+    "performance.mp4": {
+      "sha256": "e231e4d0be9de312426074a4f52f1a28a70d3665f9ac472ba562d3caebcbe0cd"
+    },
+    "finale.mp4": {
+      "sha256": "fb36d29825be55963a580853c160abe134315c585a8b390ed48f200f5d01c673"
+    }
+  }
+}

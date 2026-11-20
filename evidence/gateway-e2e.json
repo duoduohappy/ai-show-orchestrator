@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-20T10:03:15.196Z",
+  "mode": "本机模拟 Render 拓扑，真实 HTTP 队列与出站网关，真实 OBS",
+  "obsVersion": "33.0.1",
+  "transport": "gateway",
+  "execution": [
+    {
+      "cueId": "CUE-1",
+      "name": "开场",
+      "sceneName": "全景机位",
+      "actualAt": 1795168995174,
+      "plannedAtMs": 0,
+      "latencyMs": 411,
+      "latenessMs": 420,
+      "recovered": false,
+      "mediaState": "OBS_MEDIA_STATE_PLAYING"
+    }
+  ],
+  "mediaCacheVerified": true
+}
