@@ -38,3 +38,7 @@ evidence/real-obs-demo.mp4 是对真实 OBS 输出进行截图采样再合成的
 可选执行 npm run test:e2e 对运行中的本机服务做端到端验证；该测试会新增虚构业务或操作真实 OBS。演出测试还需要 ffmpeg。npm run backup 使用 SQLite 在线备份接口保存一致快照到 DATA_DIR/backups。
 
 源码包不包含 node_modules、.env、运行中的数据库、OBS 安装目录或模型权重。不要将本机配置文件提交到公开仓库。
+
+## 回归验收
+
+执行 `npm run test:all` 可复现模块、异常输入、业务及免费环境检查；真实模型/OBS 验证单独执行 `npm run test:e2e`。详见 [本轮回归报告](docs/QA-REPORT.md)。

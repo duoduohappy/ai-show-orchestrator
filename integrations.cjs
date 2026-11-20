@@ -11,5 +11,5 @@ if(u.pathname==='/api/obs/scene'&&req.method==='POST'){require('./show-api.cjs')
 if(u.pathname==='/api/comfy/status'&&req.method==='GET'){if(!process.env.COMFY_URL)return {online:false,error:'本机未配置 ComfyUI；尚未生成真实视频'};return {online:true,stats:await json(process.env.COMFY_URL.replace(/\/$/,'')+'/system_stats',{},5000)};}
 if(u.pathname==='/api/comfy/prompt'&&req.method==='POST'){if(!process.env.COMFY_URL)throw Error('ComfyUI 未配置');const workflow=body.workflow;if(!workflow||typeof workflow!=='object'||Array.isArray(workflow)||!Object.values(workflow).every(n=>n&&typeof n.class_type==='string'&&n.inputs))throw Error('请提供 ComfyUI API 格式工作流');const r=await json(process.env.COMFY_URL.replace(/\/$/,'')+'/prompt',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:workflow})});if(!r.prompt_id)throw Error('ComfyUI 未返回任务编号');audit(base,{type:'comfy-submit',promptId:r.prompt_id});return r;}
 if(u.pathname.startsWith('/api/comfy/history/')&&req.method==='GET'){if(!process.env.COMFY_URL)throw Error('ComfyUI 未配置');const id=u.pathname.split('/').pop();if(!/^[a-zA-Z0-9-]{1,100}$/.test(id))throw Error('任务编号无效');return json(process.env.COMFY_URL.replace(/\/$/,'')+'/history/'+id,{},10000);}
-throw Error('接口不存在或方法不允许');};
+throw Object.assign(Error('接口不存在或方法不允许'),{status:404});};
 

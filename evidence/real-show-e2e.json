@@ -1,15 +1,15 @@
 {
-  "verifiedAt": "2026-11-20T10:02:02.935Z",
+  "verifiedAt": "2026-11-20T11:19:39.878Z",
   "kind": "真实 OBS 33.0.1 + WebSocket + 本机 HTTP 端到端测试",
   "media": "FFmpeg 程序渲染，非 AI 视频",
   "obsVersion": "33.0.1",
-  "elapsedMs": 15148,
+  "elapsedMs": 15154,
   "softwareReadbackLatencyMs": [
-    75,
-    75,
-    77
+    122,
+    62,
+    61
   ],
-  "maxReadbackMs": 77,
+  "maxReadbackMs": 122,
   "previewSaved": true,
   "recording": {
     "verified": true,
@@ -78,9 +78,9 @@
       ]
     },
     "run": {
-      "id": "b9f2a6ea-ba1d-484b-835d-dd3ee9d7543a",
+      "id": "613d0d3d-f0a3-4ba8-981b-cc857aac04a1",
       "version": 1,
-      "startedAt": 1795168907295,
+      "startedAt": 1795173564270,
       "auto": true,
       "failures": 0,
       "executions": [
@@ -88,10 +88,10 @@
           "cueId": "CUE-1",
           "name": "开场",
           "sceneName": "全景机位",
-          "actualAt": 1795168907457,
+          "actualAt": 1795173564501,
           "plannedAtMs": 0,
-          "latencyMs": 75,
-          "latenessMs": 162,
+          "latencyMs": 122,
+          "latenessMs": 231,
           "recovered": false,
           "mediaState": "OBS_MEDIA_STATE_PLAYING"
         },
@@ -99,10 +99,10 @@
           "cueId": "CUE-2",
           "name": "主唱入场",
           "sceneName": "主唱中景",
-          "actualAt": 1795168912529,
+          "actualAt": 1795173569524,
           "plannedAtMs": 5000,
-          "latencyMs": 75,
-          "latenessMs": 234,
+          "latencyMs": 62,
+          "latenessMs": 254,
           "recovered": false,
           "mediaState": "OBS_MEDIA_STATE_PLAYING"
         },
@@ -110,20 +110,91 @@
           "cueId": "CUE-3",
           "name": "谢幕",
           "sceneName": "舞台全景",
-          "actualAt": 1795168917424,
+          "actualAt": 1795173574401,
           "plannedAtMs": 10000,
-          "latencyMs": 77,
-          "latenessMs": 129,
+          "latencyMs": 61,
+          "latenessMs": 131,
           "recovered": false,
           "mediaState": "OBS_MEDIA_STATE_PLAYING"
         }
       ],
       "pausedAt": null,
-      "finishedAt": 1795168922443
+      "finishedAt": 1795173579424
     },
     "cursor": 3,
     "pending": null,
     "events": [
+      {
+        "at": "2026-11-20T11:19:39.424Z",
+        "message": "最后一段媒体已结束，整场执行报告完成"
+      },
+      {
+        "at": "2026-11-20T11:19:34.401Z",
+        "message": "真实 OBS cue 已回读：谢幕",
+        "latencyMs": 61,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T11:19:29.524Z",
+        "message": "真实 OBS cue 已回读：主唱入场",
+        "latencyMs": 62,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T11:19:24.501Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 122,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T11:19:24.270Z",
+        "message": "真实软件演出已开始",
+        "auto": true
+      },
+      {
+        "at": "2026-11-20T11:19:24.262Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T11:19:24.256Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T11:19:24.114Z",
+        "message": "已终止自动执行，保留 OBS 当前画面与审计"
+      },
+      {
+        "at": "2026-11-20T11:19:24.107Z",
+        "message": "回读检查完成，时间轴从暂停点恢复"
+      },
+      {
+        "at": "2026-11-20T11:19:24.096Z",
+        "message": "操作失败：测试故障：指令发送前连接失败",
+        "action": "next"
+      },
+      {
+        "at": "2026-11-20T11:19:24.081Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 64,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T11:19:24.008Z",
+        "message": "真实软件演出已开始",
+        "auto": false
+      },
+      {
+        "at": "2026-11-20T11:19:23.998Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T11:19:23.991Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T11:19:23.768Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      },
       {
         "at": "2026-11-20T10:02:02.443Z",
         "message": "最后一段媒体已结束，整场执行报告完成"
@@ -300,22 +371,22 @@
     {
       "route": "actions/prepare",
       "status": 401,
-      "elapsedMs": 31
+      "elapsedMs": 49
     },
     {
       "route": "login",
       "status": 200,
-      "elapsedMs": 4
+      "elapsedMs": 6
     },
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 2
+      "elapsedMs": 3
     },
     {
       "route": "actions/prepare",
       "status": 200,
-      "elapsedMs": 172
+      "elapsedMs": 190
     },
     {
       "route": "obs-status",
@@ -325,12 +396,12 @@
     {
       "route": "actions/rehearse",
       "status": 200,
-      "elapsedMs": 200
+      "elapsedMs": 218
     },
     {
       "route": "actions/publish",
       "status": 200,
-      "elapsedMs": 5
+      "elapsedMs": 7
     },
     {
       "route": "actions/start",
@@ -340,7 +411,7 @@
     {
       "route": "actions/next",
       "status": 200,
-      "elapsedMs": 88
+      "elapsedMs": 74
     },
     {
       "route": "actions/next",
@@ -360,7 +431,7 @@
     {
       "route": "actions/next",
       "status": 409,
-      "elapsedMs": 6
+      "elapsedMs": 7
     },
     {
       "route": "state",
@@ -370,7 +441,7 @@
     {
       "route": "actions/recover",
       "status": 200,
-      "elapsedMs": 8
+      "elapsedMs": 10
     },
     {
       "route": "state",
@@ -380,324 +451,24 @@
     {
       "route": "actions/stop",
       "status": 200,
-      "elapsedMs": 5
+      "elapsedMs": 7
     },
     {
       "route": "actions/rehearse",
       "status": 200,
-      "elapsedMs": 146
+      "elapsedMs": 139
     },
     {
       "route": "actions/publish",
       "status": 200,
-      "elapsedMs": 7
+      "elapsedMs": 5
     },
     {
       "route": "actions/start",
       "status": 200,
-      "elapsedMs": 10
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 15
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 20
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 3
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 38
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 21
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 26
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 32
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 5
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 30
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 26
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 36
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 22
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 3
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 25
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
       "elapsedMs": 8
     },
     {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 43
-    },
-    {
       "route": "state",
       "status": 200,
       "elapsedMs": 1
@@ -711,56 +482,6 @@
       "route": "state",
       "status": 200,
       "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 19
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 25
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 2
-    },
-    {
-      "route": "preview",
-      "status": 200,
-      "elapsedMs": 18
-    },
-    {
-      "route": "state",
-      "status": 200,
-      "elapsedMs": 1
     },
     {
       "route": "preview",
@@ -785,7 +506,37 @@
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 29
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 21
     },
     {
       "route": "state",
@@ -800,7 +551,87 @@
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 3
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 36
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 22
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 24
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
     },
     {
       "route": "preview",
@@ -815,17 +646,17 @@
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 19
+      "elapsedMs": 17
     },
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 1
+      "elapsedMs": 2
     },
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 19
+      "elapsedMs": 16
     },
     {
       "route": "state",
@@ -845,7 +676,7 @@
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 20
+      "elapsedMs": 19
     },
     {
       "route": "state",
@@ -860,12 +691,52 @@
     {
       "route": "state",
       "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 22
+    },
+    {
+      "route": "state",
+      "status": 200,
       "elapsedMs": 1
     },
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 17
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 5
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 31
     },
     {
       "route": "state",
@@ -876,6 +747,16 @@
       "route": "preview",
       "status": 200,
       "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 21
     },
     {
       "route": "state",
@@ -891,6 +772,186 @@
       "route": "state",
       "status": 200,
       "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 4
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 41
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 38
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 21
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 24
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 27
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 18
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 19
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 25
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 30
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 3
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 31
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 21
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 33
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 1
+    },
+    {
+      "route": "preview",
+      "status": 200,
+      "elapsedMs": 20
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
     },
     {
       "route": "preview",
@@ -905,12 +966,22 @@
     {
       "route": "preview",
       "status": 200,
+      "elapsedMs": 17
+    },
+    {
+      "route": "state",
+      "status": 200,
+      "elapsedMs": 2
+    },
+    {
+      "route": "preview",
+      "status": 200,
       "elapsedMs": 18
     },
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 1
+      "elapsedMs": 2
     },
     {
       "route": "preview",
@@ -920,7 +991,7 @@
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 1
+      "elapsedMs": 2
     },
     {
       "route": "preview",
@@ -930,22 +1001,22 @@
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 5
+      "elapsedMs": 4
     },
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 29
+      "elapsedMs": 28
     },
     {
       "route": "state",
       "status": 200,
-      "elapsedMs": 3
+      "elapsedMs": 2
     },
     {
       "route": "preview",
       "status": 200,
-      "elapsedMs": 39
+      "elapsedMs": 16
     }
   ]
 }

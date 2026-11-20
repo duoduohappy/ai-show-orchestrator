@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-20T10:01:47.131Z",
+  "verifiedAt": "2026-11-20T11:19:24.119Z",
   "mode": "真实 OBS，发送前注入一次失败",
   "state": {
     "version": 1,
@@ -61,9 +61,9 @@
       ]
     },
     "run": {
-      "id": "c3969f30-37bc-45b4-8477-5a1a920406f0",
+      "id": "ccc2d64f-ffab-48f9-bf00-726849976f08",
       "version": 1,
-      "startedAt": 1795168907012,
+      "startedAt": 1795173564008,
       "auto": false,
       "failures": 1,
       "executions": [
@@ -71,19 +71,90 @@
           "cueId": "CUE-1",
           "name": "开场",
           "sceneName": "全景机位",
-          "actualAt": 1795168907100,
+          "actualAt": 1795173564081,
           "plannedAtMs": 0,
-          "latencyMs": 81,
-          "latenessMs": 88,
+          "latencyMs": 64,
+          "latenessMs": 73,
           "recovered": false,
           "mediaState": "OBS_MEDIA_STATE_PLAYING"
         }
       ],
-      "pausedAt": 1795168907112
+      "pausedAt": 1795173564096
     },
     "cursor": 1,
     "pending": null,
     "events": [
+      {
+        "at": "2026-11-20T11:19:24.096Z",
+        "message": "操作失败：测试故障：指令发送前连接失败",
+        "action": "next"
+      },
+      {
+        "at": "2026-11-20T11:19:24.081Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 64,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T11:19:24.008Z",
+        "message": "真实软件演出已开始",
+        "auto": false
+      },
+      {
+        "at": "2026-11-20T11:19:23.998Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T11:19:23.991Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T11:19:23.768Z",
+        "message": "真实 OBS 演示场景和媒体已准备"
+      },
+      {
+        "at": "2026-11-20T10:02:02.443Z",
+        "message": "最后一段媒体已结束，整场执行报告完成"
+      },
+      {
+        "at": "2026-11-20T10:01:57.424Z",
+        "message": "真实 OBS cue 已回读：谢幕",
+        "latencyMs": 77,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:52.529Z",
+        "message": "真实 OBS cue 已回读：主唱入场",
+        "latencyMs": 75,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.457Z",
+        "message": "真实 OBS cue 已回读：开场",
+        "latencyMs": 75,
+        "recovered": false
+      },
+      {
+        "at": "2026-11-20T10:01:47.295Z",
+        "message": "真实软件演出已开始",
+        "auto": true
+      },
+      {
+        "at": "2026-11-20T10:01:47.283Z",
+        "message": "已锁定节目版本 v1"
+      },
+      {
+        "at": "2026-11-20T10:01:47.276Z",
+        "message": "真实 OBS 场景和媒体预检通过"
+      },
+      {
+        "at": "2026-11-20T10:01:47.128Z",
+        "message": "已终止自动执行，保留 OBS 当前画面与审计"
+      },
+      {
+        "at": "2026-11-20T10:01:47.122Z",
+        "message": "回读检查完成，时间轴从暂停点恢复"
+      },
       {
         "at": "2026-11-20T10:01:47.112Z",
         "message": "操作失败：测试故障：指令发送前连接失败",
